@@ -5,18 +5,26 @@
 <title>Untitled Document</title>
 <style>
   body {background-color:black}
-  h1   {color:white}
+  h1   {
+	color:white;
+  	font-family:courier;
+    font-size:360%;}
 p  {
     color:white;
     font-family:courier;
-    font-size:160%;
+    font-size:120%;
+	margin-top: 100px;
+    margin-bottom: 100px;
+    margin-right: 150px;
+    margin-left: 50px;
 }
 </style>
 </head>
 
 <body>
+
 <p>
-    <strong>Look at the Sound</strong>
+    <font size="20" color="white">Look at the Sound!</font>
 </p>
 <p>
     <em>
