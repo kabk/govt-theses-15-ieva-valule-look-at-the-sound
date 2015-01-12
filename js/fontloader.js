@@ -11,17 +11,17 @@
     var googleFonts = window.googleFonts,
         typekitFonts = window.typekitFonts;
 
-    var googleFontString = function (family, variants) {
+    var googleFontString = function (family, variants, subsets) {
         var result = family;
         if (!!variants) {
-            result += ':' + variants.join(',') + ':latin,cyrillic';
+            result += ':' + variants.join(',') + ':' + subsets.join(',');
         }
         return result;
     };
 
     $.each(fonts, function (family, font) {
         if (font.source === 'google') {
-            googleFonts.push(googleFontString(family, font.variants));
+            googleFonts.push(googleFontString(family, font.variants, font.subsets));
         } else if (font.source === 'typekit') {
             typekitFonts.push({
                 'id': font.id,
