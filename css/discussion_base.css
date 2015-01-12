@@ -749,11 +749,32 @@ a {
 .fr-linktype-submit .fr-text {
   cursor: default;
 }
+.fr-widget-hover-opacity-60 {
+  -webkit-transition: opacity 0.5s ease;
+  -moz-transition: opacity 0.5s ease;
+  -o-transition: opacity 0.5s ease;
+  transition: opacity 0.5s ease;
+}
 .fr-widget-hover-opacity-60:hover {
   opacity: 0.6;
+  -webkit-transition-duration: 0.125s;
+  -moz-transition-duration: 0.125s;
+  -o-transition-duration: 0.125s;
+  transition-duration: 0.125s;
+}
+.fr-widget-hover-scale-up {
+  -webkit-transition: transform 0.5s ease;
+  -moz-transition: transform 0.5s ease;
+  -o-transition: transform 0.5s ease;
+  transition: transform 0.5s ease;
 }
 .fr-widget-hover-scale-up:hover {
+  -webkit-transform: scale(1.1);
   transform: scale(1.1);
+  -webkit-transition-duration: 0.15s;
+  -moz-transition-duration: 0.15s;
+  -o-transition-duration: 0.15s;
+  transition-duration: 0.15s;
 }
 .fr-copyright-footer {
   bottom: 0;
